@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kota Menu & Order Online | Mamzo's Kota Products & Services</title>
+  <meta name="description" content="Browse our delicious Kota menu featuring Classic, Russian, Dagwood, Full House, Steak, and Chicken Kotas. Order online for pickup or delivery.">
+  <meta name="keywords" content="Kota menu, order Kota online, South African street food, Tembisa food delivery">
+  <!-- Link to external CSS for styling -->
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head> 
+
+<body bgcolor="#FFF8DC"> 
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0" bgcolor="#8B4513">
+        <tr>
+          <td align="center"><a href="index.html">Home</a></td>
+          <td align="center"><a href="about.html">About Us</a></td>
+          <td align="center"><a href="products.html">Products & Services</a></td>
+          <td align="center"><a href="reviews.html">Reviews</a></td>
+          <td align="center"><a href="contact.html">Contact</a></td>
+        </tr>
+      </table>
+    </nav>
+  </header> 
+  
+  <main>
+    <!-- Heading -->
+    <center>
+      <h1><font color="#B22222">Products & Services</font></h1>
+      <!-- Smaller Main Image for Products Page -->
+      <img src="Images/kota-1.jpg" class="products-main-img" alt="Fresh Kota preparation at Mamzo's Kota shop">
+      <p>We make fresh, generous Kotas and sides daily.</p>
+    </center>
+
+    <!-- Search Box -->
+    <div class="search-container">
+      <input type="text" id="searchBox" class="search-box" placeholder="Search menu items...">
+    </div>
+
+    <!-- Kota Menu Table -->
+    <hr color="#B22222" size="3">
+
+    <center><h2><font color="#8B4513">Kota Menu</font></h2></center>
+    <table border="1" cellpadding="8" cellspacing="0" width="85%" align="center" bgcolor="#FFF5CC" id="menuTable">
+      <tr bgcolor="#FFD700">
+        <th>Item</th><th>Description</th><th>Price (R)</th>
+      </tr>
+      <!-- Example menu items -->
+      <tr>
+        <td>Classic Kota</td><td>Bread loaf quarter, chips, polony, atchar, cheese & sauces</td><td>35</td>
+      </tr>
+      <tr>
+        <td>Russian Kota</td><td>Classic base + Russian sausage</td><td>45</td>
+      </tr>
+      <tr>
+        <td>Dagwood Kota</td><td>Classic base + fried egg, cheese slice</td><td>48</td>
+      </tr>
+      <tr>
+        <td>Full House Kota</td><td>Russian, egg, cheese, beef patty & extra chips</td><td>65</td>
+      </tr>
+      <tr>
+        <td>Steak Kota</td><td>Classic base + grilled steak strips</td><td>70</td>
+      </tr>
+      <tr>
+        <td>Chicken Kota</td><td>Classic base + spicy chicken</td><td>55</td>
+      </tr>
+    </table>
+    
+    <!-- Order Form -->
+    <br>
+    <center><h2><font color="#8B4513">Place an Order</font></h2></center>
+    <form action="mailto:orders@mamzoskota.co.za" method="post" enctype="text/plain" id="orderForm">
+      <table width="85%" align="center" cellpadding="6" cellspacing="0" border="0">
+        <tr><td><b>Full Name</b></td><td><input type="text" name="name" required></td></tr>
+        <tr><td><b>Phone</b></td><td><input type="tel" name="phone" required></td></tr>
+        <!-- Kota dropdown -->
+        <tr><td><b>Kota Choice</b></td>
+            <td>
+              <select name="kota" required>
+                <option value="">Select a Kota</option>
+                <option>Classic Kota</option>
+                <option>Russian Kota</option>
+                <option>Dagwood Kota</option>
+                <option>Full House Kota</option>
+                <option>Steak Kota</option>
+                <option>Chicken Kota</option>
+              </select>
+            </td></tr>
+        <!-- Extras -->
+        <tr><td><b>Extras</b></td>
+            <td>
+              <input type="checkbox" name="extra_cheese"> Extra cheese (+R5)
+              <input type="checkbox" name="extra_egg"> Egg (+R8)
+              <input type="checkbox" name="extra_russian"> Russian (+R10)
+              <input type="checkbox" name="extra_atchar"> Atchar (+R3)
+            </td></tr>
+        <tr><td><b>Quantity</b></td><td><input type="number" name="qty" min="1" value="1" required></td></tr>
+        <tr><td><b>Order Type</b></td>
+            <td>
+              <input type="radio" name="type" value="Pickup" checked> Pickup
+              <input type="radio" name="type" value="Delivery"> Delivery
+            </td></tr> 
+        <!-- Submit buttons -->
+        <tr><td><b>Address (if delivery)</b></td><td><textarea name="address" rows="3" cols="40"></textarea></td></tr>
+        <tr><td><b>Preferred Time</b></td><td><input type="time" name="time"></td></tr>
+        <tr><td><b>Notes</b></td><td><textarea name="notes" rows="3" cols="40"></textarea></td></tr>
+        <tr><td></td><td><input type="submit" value="Send Order"> <input type="reset" value="Clear"></td></tr>
+      </table>
+    </form> 
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Mamzo's Kota</h3>
+            <p>Bringing back the authentic township Kota taste with fresh ingredients, generous portions, and traditional flavors that remind you of home.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" class="social-icon facebook" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" class="social-icon instagram" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" class="social-icon twitter" aria-label="Follow us on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://wa.me/27812345643" class="social-icon whatsapp" aria-label="Chat with us on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://tiktok.com" class="social-icon tiktok" aria-label="Follow us on TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="about.html" class="footer-link">About Us</a>
+                <a href="products.html" class="footer-link">Menu</a>
+                <a href="reviews.html" class="footer-link">Reviews</a>
+                <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>240 Iringa St, Teanong, Tembisa, 1632</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>081 234 5643</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>hello@mamzoskota.co.za</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Thu: 10:00-20:00</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Subscribe for updates and special offers!</p>
+            <div class="newsletter">
+                <input type="email" placeholder="Your email address" aria-label="Enter your email for newsletter">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mamzo's Kota. All rights reserved. | ST10456358</p>
+            <p>Proudly serving authentic township Kotas in Tembisa</p>
+        </div>
+    </div>
+</footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
